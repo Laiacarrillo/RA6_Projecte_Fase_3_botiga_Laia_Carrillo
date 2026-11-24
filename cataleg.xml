@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<botiga>
+    <datos_botiga>
+        <nom>PixelCat Games</nom>
+        <moneda>EUR</moneda>
+        <ultimaActualitzacio>2026-09-29</ultimaActualitzacio>
+    </datos_botiga>
+
+    <!-- El codi identifica de manera unica cada videojoc del cataleg. -->
+    <cataleg>
+        <joc>
+            <codi>JOC-001</codi>
+            <titol>ComandamentsConquesta</titol>
+            <generes>
+                <genere>Estrategia</genere>
+                <genere>Accio</genere>
+                <genere>Tactica</genere>
+            </generes>
+            <plataformes>
+                <plataforma>PC</plataforma>
+                <plataforma>Xbox Series</plataforma>
+            </plataformes>
+            <preu>39.99</preu>
+            <valoracio>8.7</valoracio> <!-- Valora del 1 al 10 (1 es el minim i 10 el maxim). -->
+            <estoc>
+                <quantitat plataforma="PC">7</quantitat>
+                <quantitat plataforma="Xbox Series">5</quantitat>
+            </estoc>
+            <data_sortida>2025-03-15</data_sortida>
+            <descripcio>Un joc d &apos; estrategia en temps real on hauras de construir la teva base i dirigir els teus exercits.</descripcio>
+        </joc>
+
+        <joc>
+            <codi>JOC-002</codi>
+            <titol>Neon Runner</titol>
+            <generes>
+                <genere>Accio</genere>
+                <genere>Plataformes</genere>
+                <genere>Cyberpunk</genere>
+            </generes>
+            <plataformes>
+                <plataforma>PC</plataforma>
+                <plataforma>PS5</plataforma>
+                <plataforma>Switch</plataforma>
+            </plataformes>
+            <preu>24.99</preu>
+            <valoracio>9.1</valoracio>
+            <estoc>
+                <quantitat plataforma="PC">3</quantitat>
+                <quantitat plataforma="PS5">3</quantitat>
+                <quantitat plataforma="Switch">2</quantitat>
+            </estoc>
+            <data_sortida>2024-11-20</data_sortida>
+            <descripcio>Corre per una ciutat futurista plena d'obstacles, enemics i secrets amagats.</descripcio>
+        </joc>
+
+        <joc>
+            <codi>JOC-003</codi>
+            <titol>Kingdoms of Eldoria</titol>
+            <generes>
+                <genere>Aventura</genere>
+                <genere>Mon Obert</genere>
+                <genere>RPG</genere>
+            </generes>
+            <plataformes>
+                <plataforma>PC</plataforma>
+                <plataforma>PS5</plataforma>
+            </plataformes>
+            <preu>49.99</preu>
+            <valoracio>9.4</valoracio>
+            <estoc>
+                <quantitat plataforma="PC">10</quantitat>
+                <quantitat plataforma="PS5">5</quantitat>
+            </estoc>
+            <data_sortida>2025-06-10</data_sortida>
+            <descripcio>Explora un immens regne fantastic, completa missions i descobreix una historia plena de misteris.</descripcio>
+        </joc>
+
+        <joc>
+            <codi>JOC-004</codi>
+            <titol>Pixel Kart Turbo</titol>
+            <generes>
+                <genere>Esports</genere>
+                <genere>Curses</genere>
+                <genere>Arcade</genere>
+            </generes>
+            <plataformes>
+                <plataforma>Switch</plataforma>
+                <plataforma>PS5</plataforma>
+            </plataformes>
+            <preu>29.99</preu>
+            <valoracio>8.2</valoracio>
+            <estoc>
+                <quantitat plataforma="Switch">12</quantitat>
+                <quantitat plataforma="PS5">8</quantitat>
+            </estoc>
+            <data_sortida>2023-09-05</data_sortida>
+            <descripcio>Participa en curses frenetiques amb pilots extravagants i circuits plens de sorpreses.</descripcio>
+        </joc>
+
+        <joc>
+            <codi>JOC-005</codi>
+            <titol>Haunted Mansion</titol>
+            <generes>
+                <genere>Terror</genere>
+                <genere>Supervivencia</genere>
+                <genere>Misteri</genere>
+            </generes>
+            <plataformes>
+                <plataforma>PC</plataforma>
+                <plataforma>Xbox Series</plataforma>
+            </plataformes>
+            <preu>34.99</preu>
+            <valoracio>8.9</valoracio>
+            <estoc>
+                <quantitat plataforma="PC">4</quantitat>
+                <quantitat plataforma="Xbox Series">2</quantitat>
+            </estoc>
+            <data_sortida>2024-10-31</data_sortida>
+            <descripcio>Investiga una mansio abandonada i resol els seus enigmes mentre descobreixes el seu fosc passat.</descripcio>
+        </joc>
+
+        <joc>
+            <codi>JOC-006</codi>
+            <titol>Galaxy Explorer</titol>
+            <generes>
+                <genere>Simulacio</genere>
+                <genere>ExploracioEspacial</genere>
+                <genere>CienciaFiccio</genere>
+            </generes>
+            <plataformes>
+                <plataforma>PC</plataforma>
+                <plataforma>Xbox Series</plataforma>
+            </plataformes>
+            <preu>44.99</preu>
+            <valoracio>8.5</valoracio>
+            <estoc>
+                <quantitat plataforma="PC">6</quantitat>
+                <quantitat plataforma="Xbox Series">4</quantitat>
+            </estoc>
+            <data_sortida>2025-01-22</data_sortida>
+            <descripcio>Viatja per l'espai, descobreix nous planetes i gestiona els recursos de la teva nau.</descripcio>
+        </joc>
+
+        <joc>
+            <codi>JOC-007</codi>
+            <titol>Mind Puzzle</titol>
+            <generes>
+                <genere>Estrategia</genere>
+                <genere>Puzles</genere>
+                <genere>Llogica</genere>
+            </generes>
+            <plataformes>
+                <plataforma>PC</plataforma>
+                <plataforma>Mobil</plataforma>
+            </plataformes>
+            <preu>14.99</preu>
+            <valoracio>8.0</valoracio>
+            <estoc>
+                <quantitat plataforma="PC">10</quantitat>
+                <quantitat plataforma="Mobil">15</quantitat>
+            </estoc>
+            <data_sortida>2022-05-18</data_sortida>
+            <descripcio>Supera centenars de reptes mentals que augmenten progressivament de dificultat.</descripcio>
+        </joc>
+
+        <joc>
+            <codi>JOC-008</codi>
+            <titol>Samurai Shadows</titol>
+            <generes>
+                <genere>RPG</genere>
+                <genere>Accio</genere>
+                <genere>Historica</genere>
+            </generes>
+            <plataformes>
+                <plataforma>PS5</plataforma>
+                <plataforma>PC</plataforma>
+            </plataformes>
+            <preu>54.99</preu>
+            <valoracio>9.0</valoracio>
+            <estoc>
+                <quantitat plataforma="PS5">5</quantitat>
+                <quantitat plataforma="PC">4</quantitat>
+            </estoc>
+            <data_sortida>2025-08-14</data_sortida>
+            <descripcio>Converteix-te en un samurai i recorre un Japo feudal ple d'enemics i aventures.</descripcio>
+        </joc>
+
+    </cataleg>
+</botiga>

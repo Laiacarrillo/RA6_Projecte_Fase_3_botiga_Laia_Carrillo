@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catàleg de PixelCat Games carregat des d'un fitxer JSON: tria el fitxer i es mostren els jocs.">
+  <meta name="author" content="Laia Carrillo">
+  <title>Catàleg des de JSON | PixelCat Games</title>
+  <link rel="icon" href="img/logo-pixelcat.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estils.css">
+  <script src="js/tema.js" defer></script>
+  <script src="js/cataleg_json.js" defer></script>
+</head>
+<body>
+  <a class="salt-contingut" href="#contingut">Salta al contingut principal</a>
+
+  <header class="capcalera" id="capcalera">
+    <div class="capcalera__interior">
+      <a class="logo" href="index.html">
+        <img class="logo__imatge" src="img/logo-pixelcat.svg" alt="" width="48" height="39">
+        <span class="logo__nom">PixelCat Games</span>
+      </a>
+      <nav class="navegacio" aria-label="Navegació principal">
+        <ul class="menu" id="menu-principal">
+          <li><a class="menu__enllac" href="index.html">Catàleg</a></li>
+          <li><a class="menu__enllac" href="fitxa.html">Fitxa de joc</a></li>
+          <li><a class="menu__enllac" href="contacte.html">Contacte</a></li>
+          <li><a class="menu__enllac actiu" href="cataleg_json.html" aria-current="page">Catàleg JSON</a></li>
+        </ul>
+      </nav>
+      <button class="boto-tema" type="button" id="boto-tema">Mode fosc</button>
+    </div>
+  </header>
+
+  <main class="contingut" id="contingut">
+
+    <section class="cataleg" id="cataleg-json" aria-labelledby="titol-pagina">
+      <h1 id="titol-pagina">Catàleg carregat des d'un fitxer JSON</h1>
+      <h2 id="titol-botiga" hidden></h2>
+
+      <div class="filtres" id="filtres">
+        <div class="camp">
+          <label for="fitxer">Fitxer del catàleg (.json)</label>
+          <input type="file" id="fitxer" name="fitxer" accept=".json">
+        </div>
+      </div>
+
+      <p class="comptador-jocs" id="comptador-jocs" aria-live="polite"></p>
+
+      <!-- Les targetes les crea js/cataleg_json.js a partir del fitxer triat -->
+      <div class="graella-jocs" id="cataleg"></div>
+      <noscript><p class="cataleg__buit">Activa JavaScript per veure el catàleg.</p></noscript>
+    </section>
+
+  </main>
+
+  <footer class="peu" id="peu">
+    <div class="peu__interior">
+      <div class="peu__bloc">
+        <p class="peu__marca">PixelCat Games</p>
+        <p>Botiga fictícia de videojocs creada per Laia Carrillo per al projecte del mòdul 0373 (Fase 3, RA5).</p>
+      </div>
+      <nav class="peu__bloc" aria-label="Enllaços del peu de pàgina">
+        <ul class="peu__llista">
+          <li><a href="index.html">Catàleg</a></li>
+          <li><a href="fitxa.html">Fitxa de joc</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </nav>
+      <div class="peu__bloc">
+        <p>Il·lustracions, logotip, tràiler i música originals creats per a aquest projecte.</p>
+        <p>Tipografies <a href="https://fonts.google.com/specimen/Jersey+10" rel="external">Jersey 10</a> i <a href="https://fonts.google.com/specimen/Atkinson+Hyperlegible" rel="external">Atkinson Hyperlegible</a>, amb llicència OFL.</p>
+        <p>Consulta l'edat recomanada de cada joc a <a href="https://pegi.info/" rel="external">PEGI</a>.</p>
+      </div>
+    </div>
+    <p class="peu__copyright"><small>© 2026 PixelCat Games. Projecte educatiu sense finalitat comercial.</small></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# 🐱 PixelCat Games · Fase 3 (RA5) · Laia Carrillo
+- 🔧 **Convertidor:** Site24x7, «XML a JSON» (https://www.site24x7.com/es/tools/xml-a-json.html) i, per a la tornada, el seu «JSON a XML» (https://www.site24x7.com/es/tools/json-a-xml.html).
+- 🔢 **Diferència 1, números com a text (tots els jocs, p. ex. JOC-001):** el convertidor dona "preu": "39.99", "valoracio": "8.7" i "#text": "7"; al meu cataleg.json són 39.99, 8.7 i 7, sense cometes.
+- 🏷️ **Diferència 2, atributs amb símbol (JOC-001, dins d'estoc):** el convertidor escriu "-plataforma": "PC" i "#text": "7"; al meu JSON, { "plataforma": "PC", "quantitat": 7 }.
+- 📋 **Diferència 3, llistes d'un sol element:** el convertidor no la comet, perquè cap joc en té només un (tots tenen 2 o més plataformes, 3 gèneres i 2 o més quantitats d'estoc); al meu JSON "generes", "plataformes" i "estoc" són sempre llistes [ ].
+- ➕ **Altres diferències:** el convertidor deixa botiga > cataleg > joc i generes > genere (jo, botiga i jocs), perd el comentari de l'XML i no té la dada "disponible".
+- 🔤 **Número o text:** "codi" és text ("JOC-001") perquè és un identificador i no s'hi fan càlculs; "preu" és número (39.99) perquè se'n calcula l'IVA; "data_sortida" és text perquè JSON no té tipus data.
+- ↩️ **Tornada a XML (Part C):** "codi" torna a ser un element <codi> (no un atribut; a l'original ja ho era), dins de cada <jocs>; s'ha afegit l'arrel <root>; les llistes es repeteixen (<generes> un cop per valor, <estoc> per plataforma) sense <cataleg> ni <joc>; "plataforma" ja no és atribut de <quantitat>; es perden els comentaris i 8.0 i 9.0 passen a 8 i 9 (JOC-007 i JOC-008); apareix <disponible>.
+- 📐 **DTD (Part C):** no validaria: el retorn té l'arrel <root> i el DTD exigeix <botiga> amb datos_botiga i cataleg; a més, <jocs> i <disponible> no hi estan declarats.
+- 🐞 **Part D, errors de sintaxi:** el fragment en tenia 6: cometes (2: 'codi' amb cometes simples i plataformes sense cometes), comentari (1: // preu sense IVA) i comes (3: en falta una després de "estoc": 7 i n'hi ha dues de finals).
+- 🕵️ **Part D, error que el validador no detecta:** "preu": "24.99" és JSON vàlid però és text; un preu ha de ser el número 24.99, perquè amb text no es poden fer càlculs com l'IVA.
+- 🧩 **Part E, funció:** creaTargeta(joc), a js/cataleg_json.js, crea cada targeta amb el DOM; pintaCataleg(dades) la crida per a cada element de jocs.
+- 🧪 **Part E, prova amb cataleg_convertidor.json:** la pàgina mostra «falta la llista jocs», perquè al convertidor les dades són a botiga.cataleg.joc; si s'hi arribés, generes seria un objecte (sense join) i valoracio un text (sense toFixed), per la diferència 1.
+- ▶️ **Com obrir-ho:** descomprimeix i obre cataleg_json.html al navegador (sense servidor) i tria cataleg.json al camp de fitxer.

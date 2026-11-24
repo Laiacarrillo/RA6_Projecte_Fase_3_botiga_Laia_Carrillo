@@ -1,0 +1,170 @@
+{
+  "botiga": {
+    "nom": "PixelCat Games",
+    "moneda": "EUR",
+    "ultimaActualitzacio": "2026-09-29",
+    "adreca": {
+      "carrer": "Carrer dels Pixels, 8",
+      "ciutat": "Girona",
+      "codi_postal": "17001"
+    }
+  },
+  "jocs": [
+    {
+      "codi": "JOC-001",
+      "titol": "ComandamentsConquesta",
+      "generes": ["Estrategia", "Accio", "Tactica"],
+      "plataformes": ["PC", "Xbox Series"],
+      "preu": 39.99,
+      "valoracio": 8.7,
+      "estoc": [
+        { "plataforma": "PC", "quantitat": 7 },
+        { "plataforma": "Xbox Series", "quantitat": 5 }
+      ],
+      "data_sortida": "2025-03-15",
+      "descripcio": "Un joc d ' estrategia en temps real on hauras de construir la teva base i dirigir els teus exercits.",
+      "disponible": true,
+      "opinions": [
+        { "usuari": "EstrategaCat", "nota": 9 },
+        { "usuari": "TacticGamer", "nota": 8.5 }
+      ]
+    },
+    {
+      "codi": "JOC-002",
+      "titol": "Neon Runner",
+      "generes": ["Accio", "Plataformes", "Cyberpunk"],
+      "plataformes": ["PC", "PS5", "Switch"],
+      "preu": 24.99,
+      "valoracio": 9.1,
+      "estoc": [
+        { "plataforma": "PC", "quantitat": 3 },
+        { "plataforma": "PS5", "quantitat": 3 },
+        { "plataforma": "Switch", "quantitat": 2 }
+      ],
+      "data_sortida": "2024-11-20",
+      "descripcio": "Corre per una ciutat futurista plena d'obstacles, enemics i secrets amagats.",
+      "disponible": true,
+      "opinions": [
+        { "usuari": "CyberPau", "nota": 9.5 },
+        { "usuari": "NeonNuria", "nota": 8.8 },
+        { "usuari": "Runner99", "nota": 9 }
+      ]
+    },
+    {
+      "codi": "JOC-003",
+      "titol": "Kingdoms of Eldoria",
+      "generes": ["Aventura", "Mon Obert", "RPG"],
+      "plataformes": ["PC", "PS5"],
+      "preu": 49.99,
+      "valoracio": 9.4,
+      "estoc": [
+        { "plataforma": "PC", "quantitat": 10 },
+        { "plataforma": "PS5", "quantitat": 5 }
+      ],
+      "data_sortida": "2025-06-10",
+      "descripcio": "Explora un immens regne fantastic, completa missions i descobreix una historia plena de misteris.",
+      "disponible": true,
+      "opinions": [
+        { "usuari": "EldoriaFan", "nota": 10 },
+        { "usuari": "QuestMaster", "nota": 9.2 },
+        { "usuari": "MarcRPG", "nota": 9 }
+      ]
+    },
+    {
+      "codi": "JOC-004",
+      "titol": "Pixel Kart Turbo",
+      "generes": ["Esports", "Curses", "Arcade"],
+      "plataformes": ["Switch", "PS5"],
+      "preu": 29.99,
+      "valoracio": 8.2,
+      "estoc": [
+        { "plataforma": "Switch", "quantitat": 12 },
+        { "plataforma": "PS5", "quantitat": 8 }
+      ],
+      "data_sortida": "2023-09-05",
+      "descripcio": "Participa en curses frenetiques amb pilots extravagants i circuits plens de sorpreses.",
+      "disponible": true,
+      "opinions": [
+        { "usuari": "KartPilot", "nota": 8 },
+        { "usuari": "TurboClara", "nota": 8.4 }
+      ]
+    },
+    {
+      "codi": "JOC-005",
+      "titol": "Haunted Mansion",
+      "generes": ["Terror", "Supervivencia", "Misteri"],
+      "plataformes": ["PC", "Xbox Series"],
+      "preu": 34.99,
+      "valoracio": 8.9,
+      "estoc": [
+        { "plataforma": "PC", "quantitat": 4 },
+        { "plataforma": "Xbox Series", "quantitat": 2 }
+      ],
+      "data_sortida": "2024-10-31",
+      "descripcio": "Investiga una mansio abandonada i resol els seus enigmes mentre descobreixes el seu fosc passat.",
+      "disponible": true,
+      "opinions": [
+        { "usuari": "NitFosc", "nota": 9 },
+        { "usuari": "EnigmaLover", "nota": 8.8 }
+      ]
+    },
+    {
+      "codi": "JOC-006",
+      "titol": "Galaxy Explorer",
+      "generes": ["Simulacio", "ExploracioEspacial", "CienciaFiccio"],
+      "plataformes": ["PC", "Xbox Series"],
+      "preu": 44.99,
+      "valoracio": 8.5,
+      "estoc": [
+        { "plataforma": "PC", "quantitat": 6 },
+        { "plataforma": "Xbox Series", "quantitat": 4 }
+      ],
+      "data_sortida": "2025-01-22",
+      "descripcio": "Viatja per l'espai, descobreix nous planetes i gestiona els recursos de la teva nau.",
+      "disponible": true,
+      "opinions": [
+        { "usuari": "AstroOriol", "nota": 8.5 },
+        { "usuari": "NauEstel", "nota": 8.5 }
+      ]
+    },
+    {
+      "codi": "JOC-007",
+      "titol": "Mind Puzzle",
+      "generes": ["Estrategia", "Puzles", "Llogica"],
+      "plataformes": ["PC", "Mobil"],
+      "preu": 14.99,
+      "valoracio": 8.0,
+      "estoc": [
+        { "plataforma": "PC", "quantitat": 10 },
+        { "plataforma": "Mobil", "quantitat": 15 }
+      ],
+      "data_sortida": "2022-05-18",
+      "descripcio": "Supera centenars de reptes mentals que augmenten progressivament de dificultat.",
+      "disponible": true,
+      "opinions": [
+        { "usuari": "MentActiva", "nota": 8 },
+        { "usuari": "LogicPol", "nota": 7.5 },
+        { "usuari": "PuzzleJana", "nota": 8.5 }
+      ]
+    },
+    {
+      "codi": "JOC-008",
+      "titol": "Samurai Shadows",
+      "generes": ["RPG", "Accio", "Historica"],
+      "plataformes": ["PS5", "PC"],
+      "preu": 54.99,
+      "valoracio": 9.0,
+      "estoc": [
+        { "plataforma": "PS5", "quantitat": 5 },
+        { "plataforma": "PC", "quantitat": 4 }
+      ],
+      "data_sortida": "2025-08-14",
+      "descripcio": "Converteix-te en un samurai i recorre un Japo feudal ple d'enemics i aventures.",
+      "disponible": true,
+      "opinions": [
+        { "usuari": "KatanaBiel", "nota": 9.2 },
+        { "usuari": "RoninBcn", "nota": 8.8 }
+      ]
+    }
+  ]
+}

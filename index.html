@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catàleg de PixelCat Games: videojocs d'estratègia, aventura, curses, terror i trencaclosques per a PC, PS5, Xbox Series, Switch i mòbil.">
+  <meta name="author" content="Laia Carrillo">
+  <title>Catàleg de videojocs | PixelCat Games</title>
+  <link rel="icon" href="img/logo-pixelcat.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estils.css">
+  <script src="js/tema.js" defer></script>
+  <script src="js/cataleg.js" defer></script>
+</head>
+<body>
+  <a class="salt-contingut" href="#contingut">Salta al contingut principal</a>
+
+  <header class="capcalera" id="capcalera">
+    <div class="capcalera__interior">
+      <a class="logo" href="index.html">
+        <img class="logo__imatge" src="img/logo-pixelcat.svg" alt="" width="48" height="39">
+        <span class="logo__nom">PixelCat Games</span>
+      </a>
+      <nav class="navegacio" aria-label="Navegació principal">
+        <ul class="menu" id="menu-principal">
+          <li><a class="menu__enllac actiu" href="index.html" aria-current="page">Catàleg</a></li>
+          <li><a class="menu__enllac" href="fitxa.html">Fitxa de joc</a></li>
+          <li><a class="menu__enllac" href="contacte.html">Contacte</a></li>
+          <li><a class="menu__enllac" href="cataleg_json.html">Catàleg JSON</a></li>
+        </ul>
+      </nav>
+      <button class="boto-tema" type="button" id="boto-tema">Mode fosc</button>
+    </div>
+  </header>
+
+  <main class="contingut" id="contingut">
+
+    <section class="portada" id="portada" aria-labelledby="titol-portada">
+      <div class="portada__text">
+        <h1 id="titol-portada">Videojocs triats amb ull de gat</h1>
+        <p class="portada__entradeta">A <strong>PixelCat Games</strong> provem cada joc abans de posar-lo a la prestatgeria. Hi trobaràs estratègia, aventura, curses, terror i trencaclosques per a PC, PS5, Xbox Series, Switch i mòbil.</p>
+        <p>Tots els preus són en euros i inclouen l'<abbr title="Impost sobre el valor afegit">IVA</abbr>. Si reserves un joc, <em>te'l guardem 48 hores</em> a la botiga.</p>
+        <p class="portada__accions">
+          <a class="boto" href="#cataleg">Veure el catàleg</a>
+          <a class="boto boto--secundari" href="contacte.html">Fes-nos una consulta</a>
+        </p>
+      </div>
+      <figure class="portada__imatge">
+        <img src="img/logo-pixelcat.svg" alt="La mascota de PixelCat Games: un gat taronja dibuixat en pixel art" width="320" height="260">
+      </figure>
+    </section>
+
+    <section class="cataleg" id="cataleg" aria-labelledby="titol-cataleg">
+      <h2 id="titol-cataleg">Catàleg</h2>
+      <p class="cataleg__resum">Ara mateix tenim <strong>8 jocs</strong> al catàleg. Les dades surten del fitxer <code>cataleg.xml</code> de la botiga.</p>
+
+      <div class="filtres" id="filtres">
+        <div class="camp">
+          <label for="cerca-titol">Cerca per títol</label>
+          <input type="search" id="cerca-titol" name="cerca" placeholder="Ex.: Neon Runner" autocomplete="off">
+        </div>
+        <div class="camp">
+          <label for="filtre-plataforma">Plataforma</label>
+          <select id="filtre-plataforma" name="plataforma">
+            <option value="totes">Totes</option>
+            <option value="PC">PC</option>
+            <option value="PS5">PS5</option>
+            <option value="Xbox Series">Xbox Series</option>
+            <option value="Switch">Switch</option>
+            <option value="Mòbil">Mòbil</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="comptador-jocs" id="comptador-jocs" aria-live="polite"></p>
+
+      <!-- Les targetes les crea js/cataleg.js a partir de l'array jocs -->
+      <div class="graella-jocs" id="llista-jocs"></div>
+      <noscript><p class="cataleg__buit">Activa JavaScript per veure el catàleg.</p></noscript>
+    </section>
+
+    <aside class="recomanacions" id="recomanacions" aria-labelledby="titol-recomanacions">
+      <h2 id="titol-recomanacions">Recomanacions de la botiga</h2>
+
+      <section class="recomanacions__bloc" aria-labelledby="titol-joc-mes">
+        <h3 id="titol-joc-mes">Joc del mes</h3>
+        <p><a href="fitxa.html"><strong>Kingdoms of Eldoria</strong></a> és el joc més ben valorat del catàleg. A la fitxa en pots veure el tràiler i l'estoc per plataforma.</p>
+      </section>
+
+      <section class="recomanacions__bloc" aria-labelledby="titol-ranquing">
+        <h3 id="titol-ranquing">Els més ben valorats</h3>
+        <ol class="ranquing">
+          <li><a href="#joc-003">Kingdoms of Eldoria</a> <span class="ranquing__nota">9,4</span></li>
+          <li><a href="#joc-002">Neon Runner</a> <span class="ranquing__nota">9,1</span></li>
+          <li><a href="#joc-008">Samurai Shadows</a> <span class="ranquing__nota">9,0</span></li>
+        </ol>
+      </section>
+
+      <section class="recomanacions__bloc" aria-labelledby="titol-economics">
+        <h3 id="titol-economics">Per menys de 40 €</h3>
+        <ul class="llista-economics">
+          <li><a href="#joc-007">Mind Puzzle</a>, 18,14 €</li>
+          <li><a href="#joc-002">Neon Runner</a>, 30,24 €</li>
+          <li><a href="#joc-004">Pixel Kart Turbo</a>, 36,29 €</li>
+        </ul>
+      </section>
+    </aside>
+
+  </main>
+
+  <footer class="peu" id="peu">
+    <div class="peu__interior">
+      <div class="peu__bloc">
+        <p class="peu__marca">PixelCat Games</p>
+        <p>Botiga fictícia de videojocs creada per Laia Carrillo per al projecte del mòdul 0373 (Fase 2, RA2 i RA3).</p>
+      </div>
+      <nav class="peu__bloc" aria-label="Enllaços del peu de pàgina">
+        <ul class="peu__llista">
+          <li><a href="index.html">Catàleg</a></li>
+          <li><a href="fitxa.html">Fitxa de joc</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </nav>
+      <div class="peu__bloc">
+        <p>Il·lustracions, logotip, tràiler i música originals creats per a aquest projecte.</p>
+        <p>Tipografies <a href="https://fonts.google.com/specimen/Jersey+10" rel="external">Jersey 10</a> i <a href="https://fonts.google.com/specimen/Atkinson+Hyperlegible" rel="external">Atkinson Hyperlegible</a>, amb llicència OFL.</p>
+        <p>Consulta l'edat recomanada de cada joc a <a href="https://pegi.info/" rel="external">PEGI</a>.</p>
+      </div>
+    </div>
+    <p class="peu__copyright"><small>© 2026 PixelCat Games. Projecte educatiu sense finalitat comercial.</small></p>
+  </footer>
+</body>
+</html>
