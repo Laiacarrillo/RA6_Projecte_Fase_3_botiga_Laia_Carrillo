@@ -1,0 +1,74 @@
+[
+    {
+        "codi": "JOC-001",
+        "titol": "ComandamentsConquesta",
+        "preu": 39.99,
+        "valoracio": 8.7,
+        "data_sortida": "2025-03-15",
+        "descripcio": "Un joc d ' estrategia en temps real on hauras de construir la teva base i dirigir els teus exercits.",
+        "disponible": 1
+    },
+    {
+        "codi": "JOC-002",
+        "titol": "Neon Runner",
+        "preu": 24.99,
+        "valoracio": 9.1,
+        "data_sortida": "2024-11-20",
+        "descripcio": "Corre per una ciutat futurista plena d'obstacles, enemics i secrets amagats.",
+        "disponible": 1
+    },
+    {
+        "codi": "JOC-003",
+        "titol": "Kingdoms of Eldoria",
+        "preu": 49.99,
+        "valoracio": 9.4,
+        "data_sortida": "2025-06-10",
+        "descripcio": "Explora un immens regne fantastic, completa missions i descobreix una historia plena de misteris.",
+        "disponible": 1
+    },
+    {
+        "codi": "JOC-004",
+        "titol": "Pixel Kart Turbo",
+        "preu": 29.99,
+        "valoracio": 8.2,
+        "data_sortida": "2023-09-05",
+        "descripcio": "Participa en curses frenetiques amb pilots extravagants i circuits plens de sorpreses.",
+        "disponible": 1
+    },
+    {
+        "codi": "JOC-005",
+        "titol": "Haunted Mansion",
+        "preu": 34.99,
+        "valoracio": 8.9,
+        "data_sortida": "2024-10-31",
+        "descripcio": "Investiga una mansio abandonada i resol els seus enigmes mentre descobreixes el seu fosc passat.",
+        "disponible": 1
+    },
+    {
+        "codi": "JOC-006",
+        "titol": "Galaxy Explorer",
+        "preu": 44.99,
+        "valoracio": 8.5,
+        "data_sortida": "2025-01-22",
+        "descripcio": "Viatja per l'espai, descobreix nous planetes i gestiona els recursos de la teva nau.",
+        "disponible": 1
+    },
+    {
+        "codi": "JOC-007",
+        "titol": "Mind Puzzle",
+        "preu": 14.99,
+        "valoracio": 8.0,
+        "data_sortida": "2022-05-18",
+        "descripcio": "Supera centenars de reptes mentals que augmenten progressivament de dificultat.",
+        "disponible": 1
+    },
+    {
+        "codi": "JOC-008",
+        "titol": "Samurai Shadows",
+        "preu": 54.99,
+        "valoracio": 9.0,
+        "data_sortida": "2025-08-14",
+        "descripcio": "Converteix-te en un samurai i recorre un Japo feudal ple d'enemics i aventures.",
+        "disponible": 1
+    }
+]
